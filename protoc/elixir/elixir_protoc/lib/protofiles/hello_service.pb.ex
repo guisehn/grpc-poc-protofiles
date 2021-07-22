@@ -1,4 +1,4 @@
-defmodule HelloRequest do
+defmodule GrpcPoc.HelloRequest do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
@@ -10,7 +10,7 @@ defmodule HelloRequest do
   field :name, 1, type: :string
 end
 
-defmodule HelloResponse do
+defmodule GrpcPoc.HelloResponse do
   @moduledoc false
   use Protobuf, syntax: :proto3
 
