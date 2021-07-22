@@ -6,7 +6,7 @@ All `.proto` files are inside the `protofiles` folder.
 
 Whenever one of them is changed, we need to run `./compile.sh` to re-generate the source code for each language (stored inside `protoc/*`).
 
-Servers/clients can point to the `protoc` using Gemfile/mix to have access to the common auto-generated code.
+Servers/clients can point to their language-specific folder inside `protoc` (e.g. using `Gemfile` or `mix.exs`) to have access to the gRPC supporting auto-generated code.
 
 ## Installing deps
 
