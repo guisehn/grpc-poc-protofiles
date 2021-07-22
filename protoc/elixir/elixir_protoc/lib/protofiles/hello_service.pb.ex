@@ -21,3 +21,15 @@ defmodule GrpcPoc.HelloResponse do
 
   field :message, 1, type: :string
 end
+
+defmodule GrpcPoc.HelloService.Service do
+  @moduledoc false
+  use GRPC.Service, name: "grpc_poc.HelloService"
+
+  rpc :Hello, GrpcPoc.HelloRequest, GrpcPoc.HelloResponse
+end
+
+defmodule GrpcPoc.HelloService.Stub do
+  @moduledoc false
+  use GRPC.Stub, service: GrpcPoc.HelloService.Service
+end
