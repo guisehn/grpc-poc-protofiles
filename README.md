@@ -1,6 +1,7 @@
 # GRPC POC Protofiles
 
-Acts as a central repository for defining the protofiles, and also the auto-generated repositoris for multiple languages.
+Acts as a central repository for defining the protofiles, and also the auto-generated repositories for multiple languages.
+
 ## Installing deps
 
 1. `protoc`: `brew install protobuf`
@@ -8,7 +9,7 @@ Acts as a central repository for defining the protofiles, and also the auto-gene
 
 ## Compiling
 
-`./compile.sh`
+`./compile.sh` will generate the GRPC code for each language (at the moment we only have elixir)
 
 ## Implementations
 
