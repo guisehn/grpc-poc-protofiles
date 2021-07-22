@@ -2,6 +2,12 @@
 
 Acts as a central repository for defining the protofiles, and also the auto-generated repositories for multiple languages.
 
+All `.proto` files are inside the `protofiles` folder.
+
+Whenever one of them is changed, we need to run `./compile.sh` to re-generate the source code for each language (stored inside `protoc/*`).
+
+Servers/clients can point to the `protoc` using Gemfile/mix to have access to the common auto-generated code.
+
 ## Installing deps
 
 1. `protoc`: `brew install protobuf`
