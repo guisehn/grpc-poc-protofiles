@@ -22,7 +22,8 @@ defmodule ElixirProtoc.MixProject do
   defp deps do
     [
       {:protobuf, "~> 0.7.1"},
-      {:google_protos, "~> 0.1"}
+      {:google_protos, "~> 0.1"},
+      {:grpc, github: "elixir-grpc/grpc"}
     ]
   end
 end
